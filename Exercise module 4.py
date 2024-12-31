@@ -296,3 +296,50 @@ del Food_stuff_tp
 nordic_countries = ('Denmark', 'Finland','Iceland', 'Norway', 'Sweden')
 print('Estonia' in nordic_countries)
 print('Iceland' in nordic_countries)
+
+
+
+## SETS Level 1 Exercise
+# sets
+it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
+A = {19, 22, 24, 20, 25, 26}
+B = {19, 22, 20, 25, 26, 24, 28, 27}
+age = [22, 19, 24, 25, 26, 24, 25, 24]
+it_companies.add('Twitter') # Adding a sinlge item to a set
+it_companies.update(['Tesla', 'EverPesa Technologies']) # Adding multiple items to a set
+it_companies.remove('Facebook')
+# Rmove method is used when the item to be removed is present in the set
+# If the item is not present, it will raise an error
+#Discard method is used when the item to be removed is present or not in the set, it doesnt raise an error in case the item isnt present in the list.
+
+
+## SETS Level 2 Exercise
+Joined = A.union(B)
+Intersection = A.intersection(B)
+are_disjoint = A.isdisjoint(B)
+A_join_B = A.union(B)
+B_join_A = B.union(A)
+Sysmmetric_difference = A.symmetric_difference(B)
+del A
+del B
+
+
+
+## SETS Level 3 Exercise
+ages_set = set(age)
+len_ages = len(ages)
+len_ages_set = len(ages_set)
+if len_ages > len_ages_set:
+    print("The list is longer.")
+elif len_ages < len_ages_set:
+    print("The set is longer.")
+else:
+    print("Both have the same length.")
+
+sentence = "I am a teacher and I love to inspire and teach people." # Sentence to analyze
+words = sentence.split() # Split the sentence into a list of words
+unique_words = set(words) # Convert the list of words into a set to remove duplicates
+unique_word_count = len(unique_words) # Count the number of unique words
+
+print("Unique words:", unique_words)
+print("Number of unique words:", unique_word_count)
