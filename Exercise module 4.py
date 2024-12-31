@@ -1,4 +1,4 @@
-## Level 1 Exercise
+## LISTS Level 1 Exercise
 Empty_list = list() # Declaring an empty list
 List = [1, 'Car', 3, 4, 5] # Declaring a list with 5 elements
 print(List) # Printing the list
@@ -49,7 +49,7 @@ full_stack.insert(5, 'SQL')
 
 
 
-## Level 2 Exercise
+## LISTS Level 2 Exercise
 ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 ages.sort()
 max_age = max(ages)
@@ -269,3 +269,30 @@ countries_to_unpack = ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 
 # Unpacking the first three countries and the rest as scandic countries
 first, second, third, *scandic_countries = countries_to_unpack
 [print(country) for country in [first, second, third] + scandic_countries]
+
+
+## TUPLES Level 1 Exercise
+Empty_tuple = tuple()
+Brothers = ['Enock', 'Elsiha', 'Elijah']
+Sisters = ['Joy', 'Enid', 'ELizabeth']
+Siblings = Brothers + Sisters
+Number_of_siblings = len(Siblings)
+Family_members = Siblings + ['Dad', 'Mum']
+
+
+## TUPLES Level 2 Exercise
+*siblings, dad, mum = Family_members
+print(siblings)
+Fruits_tupl = ['Banana', 'Orange', 'Mango', 'lemon']
+Vegetables_tupl = ['Onion', 'Tomato', 'Carrot', 'Spinach']
+Animal_prdts_tupl = ['Milk', 'Meat', 'Eggs', 'Honey']
+Food_stuff_tp = Fruits_tupl + Vegetables_tupl + Animal_prdts_tupl
+food_stuff_lt = list(Food_stuff_tp)
+index = len(food_stuff_lt)//2
+Middele_item = food_stuff_lt[index]
+First_3_Items = food_stuff_lt[:3]
+Last_3_items = food_stuff_lt[-3:]
+del Food_stuff_tp
+nordic_countries = ('Denmark', 'Finland','Iceland', 'Norway', 'Sweden')
+print('Estonia' in nordic_countries)
+print('Iceland' in nordic_countries)
