@@ -263,3 +263,9 @@ countries = [
 index = len(countries)//2
 middle_country = countries[index]
 print(middle_country)
+first_half = countries[:index]
+second_half = countries[index:]
+countries_to_unpack = ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']
+# Unpacking the first three countries and the rest as scandic countries
+first, second, third, *scandic_countries = countries_to_unpack
+[print(country) for country in [first, second, third] + scandic_countries]
