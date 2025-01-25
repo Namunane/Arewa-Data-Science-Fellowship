@@ -26,5 +26,6 @@ student['skills'].append('Deep Learning')
 student_keys = list(student.keys()) # getting student keys as a list
 student_values = list(student.values()) # getting student values as a list
 student_items = list(student.items())
+print(student_items)
 del student['address']
-del dog
+del Dog

@@ -18,6 +18,7 @@ for i in range(1,8):
 for i in range(8):
     for j in range(8):
         print('#', end=' ')
+    
     print()
 
 lst = range(0,11)
@@ -60,3 +61,35 @@ print(f"And the sum of all odds is {sum_odds}.")
 
 
 ## Level 3
+for indes in range(3):
+    print(indes)
+    if (indes ==2):
+        break
+
+
+table = [
+    ["Name", "Age", "City"],
+    ["Alice", 25, "New York"],
+    ["Bob", 30, "Los Angeles"],
+    ["Charlie", 35, "Chicago"]
+]
+
+for row in table:
+    print("\t".join(map(str, row)))
+
+# Create a table with a header row
+table = [["Name", "Age", "City"]]
+
+# Get user input for multiple rows
+while True:
+    name = input("Enter Name (or type 'done' to finish): ")
+    if name.lower() == "done":
+        break
+    age = input("Enter Age: ")
+    city = input("Enter City: ")
+    table.append([name, age, city])
+
+# Print the table 
+for row in table:
+    print("\t".join(row))
+
