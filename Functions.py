@@ -67,3 +67,62 @@ def factorial(n):
         return 1
     else:
         return n * factorial(n - 1)
+
+def is_empty(param):
+    return not bool(param)
+
+import statistics
+
+def calculate_mean(lst):
+    return sum(lst) / len(lst)
+
+def calculate_median(lst):
+    sorted_lst = sorted(lst)
+    n = len(lst)
+    mid = n // 2
+    if n % 2 == 0:
+        return (sorted_lst[mid - 1] + sorted_lst[mid]) / 2
+    else:
+        return sorted_lst[mid]
+
+def calculate_mode(lst):
+    return statistics.mode(lst)
+
+def calculate_range(lst):
+    return max(lst) - min(lst)
+
+def calculate_variance(lst):
+    mean = calculate_mean(lst)
+    return sum((x - mean) ** 2 for x in lst) / len(lst)
+
+def calculate_std(lst):
+    variance = calculate_variance(lst)
+    return variance ** 0.5
+
+## LIST COMPRESHENSION EXERCISE
+numbers = [-4, -3, -2, -1, 0, 2, 4, 6]
+negative_and_zero = [num for num in numbers if num <= 0]
+print(negative_and_zero)  
+
+list_of_lists = [[[1, 2, 3]], [[4, 5, 6]], [[7, 8, 9]]]
+flattened_list = [num for sublist in list_of_lists for inner_list in sublist for num in inner_list]
+print(flattened_list) 
+
+tuples_list = [(i, 1, i, i**2, i**3, i**4, i**5) for i in range(11)]
+print(tuples_list)
+
+countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
+countries_dict = [{'country': country.upper(), 'city': city.upper()} for sublist in countries for country, city in sublist]
+print(countries_dict)
+
+names = [[('Asabeneh', 'Yetayeh')], [('David', 'Smith')], [('Donald', 'Trump')], [('Bill', 'Gates')]]
+concatenated_names = [' '.join(name) for sublist in names for name in sublist]
+print(concatenated_names)
+
+
+# Lambda function to calculate the slope
+slope = lambda x1, y1, x2, y2: (y2 - y1) / (x2 - x1) if x2 != x1 else None
+
+# Lambda function to calculate the y-intercept
+y_intercept = lambda x1, y1, x2, y2: y1 - slope(x1, y1, x2, y2) * x1 if slope(x1, y1, x2, y2) is not None else None
+
