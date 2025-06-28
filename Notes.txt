@@ -1,0 +1,6 @@
+pip & conda install in VS code terminal
+Virtual environments: conda env list, activating a folder( conda activate <environment name>)
+
+Weekly Python topics: 
+
+Blog on Medium after every two days:
