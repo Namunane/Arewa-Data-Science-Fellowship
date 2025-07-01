@@ -1,6 +1,6 @@
-# Arewa-DS-Projects
+# Assignments
 
-This repository contains my project submissions for the Associate Data Scientist Course on DataCamp, as part of the Arewa Data Science Fellowship.
+This repository contains my weekly assignment submissions for the Data Science stage, as part of the Arewa Data Science Fellowship.
 
 ## Contents
 
@@ -20,3 +20,5 @@ Contributions are welcome! Please open an issue or submit a pull request.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
