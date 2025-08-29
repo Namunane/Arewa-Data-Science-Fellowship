@@ -1,1 +1,6 @@
 This project applied statistical testing to historical data from men’s and women’s international soccer matches. As an analyst at a leading online sports media company specializing in soccer coverage, I investigated whether women’s international matches resulted in more goals scored compared to men’s.
+
+The question that this project analysis seeks to answer is: Are more goals scored in women's international soccer matches than men's?
+
+Null hypothesis: The mean number of goals scored in women's international soccer matches is the same as men's
+Alternative hypothesis: The mean number of goals scored in women's international soccer matches is greater than men's
