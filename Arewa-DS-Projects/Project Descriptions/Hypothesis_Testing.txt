@@ -1,0 +1,1 @@
+This project applied statistical testing to historical data from men’s and women’s international soccer matches. As an analyst at a leading online sports media company specializing in soccer coverage, I investigated whether women’s international matches resulted in more goals scored compared to men’s.
